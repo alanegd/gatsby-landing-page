@@ -1,0 +1,21 @@
+.header {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    height: 80vh;
+    padding: 12rem;
+    /*Image by Freepik https://www.freepik.com/free-photo/medium-shot-man-with-tablet_21251304.htm#query=inventory&position=49&from_view=search&track=sph&uuid=d4f9a620-ba9e-46bc-baed-bdc2c3f471cb*/
+    background-image: 
+        /* Degradado sobre la imagen */
+        linear-gradient(180deg, rgba(255, 255, 255, 0.00) 83.33%, #FFF 100%, rgba(255, 255, 255, 0.8) 12.67%),
+        /* Imagen de fondo */
+        linear-gradient(180deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0.00) 100%), 
+        linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), 
+        url("../images/hero.jpg");
+    background-size: cover;
+    background-position: top;
+  
+    @media (max-width: 730px) {
+      padding: 2rem;
+    }
+}
