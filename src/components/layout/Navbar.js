@@ -1,27 +1,49 @@
 import { Link } from 'gatsby'
-import React from 'react'
+import React, { useState } from 'react'
 import * as styles from '../../styles/navbar.module.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
+import logoSVG from '../../images/logo.svg';
 
 export default function Navbar() {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <div className={styles.navbar}>
-      <nav class="flex flex-wrap justify-between py-6 sticky z-100 top-0">
-        <div class="container flex flex-wrap items-center justify-between mx-auto text-white">
-          <Link class="font-bold flex items-center">
-            <img class="mr-3" src="../../images/hero.jpg" alt="logo" width="30" height="30"/>
-            <h1>SmartStock</h1>
-          </Link>
-
-          <div class="items-center">
-            <ul class="flex flex-col md:flex-row list-none">
+      <nav class="flex flex-wrap items-center justify-between pt-3 pb-2">
+        <div class="container mx-auto flex flex-wrap items-center justify-between text-white">
+          <div class="w-full relative flex justify-between md:w-auto px-4 md:static md:block md:justify-start">
+            <Link class="font-bold flex py-2 whitespace-nowrap items-center">
+              <img class="mr-3" src={logoSVG} alt="logo" width="30" height="30"/>
+              <h1 class="text-xl italic">SmartStock</h1>
+            </Link>
+            
+            <button class="md:hidden" onClick={toggleMenu}>
+              <FontAwesomeIcon icon={showMenu ? faClose : faBars}/>
+            </button>
+          </div>
+          
+          <div className={`md:flex md:flex-grow items-center ${showMenu ? 'flex' : 'hidden'}`}>
+            <ul class="flex flex-col md:flex-row list-none ml-auto">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/">
+                  <div class="px-3 py-2 ml-2 flex">
+                    <p>Home</p>
+                  </div>
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about">
+                  <div class="px-3 py-2 ml-2 flex">
+                    <p>About</p>
+                  </div>
+                </Link>
               </li>
             </ul>
-
           </div>
         </div>
       </nav>

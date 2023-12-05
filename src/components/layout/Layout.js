@@ -5,9 +5,9 @@ import '../../styles/global.css'
 
 export default function Layout({ children }) {
   return (
-    <div className='layout'>
+    <div>
       <Navbar></Navbar>
-      <div className='content'>
+      <div>
         { children }
       </div>
       <Footer></Footer>

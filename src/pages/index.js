@@ -8,8 +8,6 @@ export default function IndexPage() {
       <HeroSection></HeroSection>
       <section>
         <div>
-          <h1>Home page</h1>
-          <p>Lorem ipsum</p>
         </div>
       </section>
     </Layout>
