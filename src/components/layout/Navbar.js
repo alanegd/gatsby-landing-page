@@ -9,7 +9,7 @@ export default function Navbar() {
         <div class="container flex flex-wrap items-center justify-between mx-auto text-white">
           <Link class="font-bold flex items-center">
             <img class="mr-3" src="../../images/hero.jpg" alt="logo" width="30" height="30"/>
-            <h1>Title</h1>
+            <h1>SmartStock</h1>
           </Link>
 
           <div class="items-center">

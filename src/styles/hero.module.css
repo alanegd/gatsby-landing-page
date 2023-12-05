@@ -2,7 +2,7 @@
     margin-top: 0;
     display: flex;
     align-items: center;
-    height: 80vh;
+    height: 90vh;
     padding: 12rem;
     /*Image by Freepik https://www.freepik.com/free-photo/medium-shot-man-with-tablet_21251304.htm#query=inventory&position=49&from_view=search&track=sph&uuid=d4f9a620-ba9e-46bc-baed-bdc2c3f471cb*/
     background-image: 
@@ -18,4 +18,8 @@
     @media (max-width: 730px) {
       padding: 2rem;
     }
+}
+
+.header h1 {
+  line-height: 1.3;
 }
