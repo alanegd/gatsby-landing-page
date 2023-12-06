@@ -10,7 +10,7 @@ export default function HeroSection() {
           <p class="md:text-2xl font-light text-white ">Seamless inventory management for your business</p>
         </div>
         <div>
-          <a class="py-3 px-12 font-bold text-white bg-[#ec5f4d] hover:bg-[#ff7c67] rounded-full cursor-pointer">Sign up</a>
+          <a href="#" class="py-3 px-12 font-bold text-white bg-[#ec5f4d] hover:bg-[#ff7c67] rounded-full cursor-pointer">Get started for free</a>
         </div>
       </div>   
     </section>
