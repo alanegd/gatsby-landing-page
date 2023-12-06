@@ -18,7 +18,7 @@ export default function Navbar() {
         <div class="container mx-auto flex flex-wrap items-center justify-between text-white">
           <div class="w-full relative flex justify-between md:w-auto px-4 md:static md:block md:justify-start">
             <Link class="font-bold flex py-2 whitespace-nowrap items-center">
-              <img class="mr-3" src={logoSVG} alt="logo" width="30" height="30"/>
+              <img class="mr-3" src={logoSVG} alt="logo" width="40" height="40"/>
               <h1 class="text-xl italic">SmartStock</h1>
             </Link>
             
@@ -27,19 +27,47 @@ export default function Navbar() {
             </button>
           </div>
           
-          <div className={`md:flex md:flex-grow items-center ${showMenu ? 'flex' : 'hidden'}`}>
-            <ul class="flex flex-col md:flex-row list-none ml-auto">
+          <div className={`md:flex md:flex-grow items-center ${showMenu ? 'flex w-full justify-end' : 'hidden'}`}>
+            <ul className="flex flex-col md:flex-row list-none md:ml-auto gap-x-8">
               <li>
                 <Link to="/">
-                  <div class="px-3 py-2 ml-2 flex">
-                    <p>Home</p>
+                  <div className="px-3 py-2 flex">
+                    <p class="hover:text-[#ec5f4d]">Home</p>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <div className="px-3 py-2 flex">
+                    <p class="hover:text-[#ec5f4d]">Features</p>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <div class="px-3 py-2 flex">
+                    <p class="hover:text-[#ec5f4d]">Pricing</p>
                   </div>
                 </Link>
               </li>
               <li>
                 <Link to="/about">
-                  <div class="px-3 py-2 ml-2 flex">
-                    <p>About</p>
+                  <div class="px-3 py-2 flex">
+                    <p class="hover:text-[#ec5f4d]">About</p>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <div class="px-3 py-2 flex">
+                    <p class="hover:text-[#ec5f4d]">Login</p>
+                  </div>
+                </Link>
+              </li>
+              <li>
+                <Link to="/">
+                  <div class="px-3 py-2 flex">
+                    <p class="font-bold hover:text-[#ec5f4d]">Sign up</p>
                   </div>
                 </Link>
               </li>
