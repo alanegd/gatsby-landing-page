@@ -1,5 +1,5 @@
 import { Link } from 'gatsby'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import * as styles from '../../styles/navbar.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faClose } from '@fortawesome/free-solid-svg-icons'
@@ -7,13 +7,29 @@ import logoSVG from '../../images/logo.svg';
 
 export default function Navbar() {
   const [showMenu, setShowMenu] = useState(false);
+  const [scrolling, setScrolling] = useState(false);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY > window.innerHeight) {
+      setScrolling(true);
+    } else {
+      setScrolling(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${scrolling ? styles.scrolled : ''}`}>
       <nav class="flex flex-wrap items-center justify-between align-middle">
         <div class="container mx-auto flex flex-wrap items-center justify-between text-white">
           <div class="w-full relative flex justify-between md:w-auto px-4 md:static md:block md:justify-start">
