@@ -14,7 +14,7 @@ export default function Navbar() {
 
   return (
     <div className={styles.navbar}>
-      <nav class="flex flex-wrap items-center justify-between pt-3 pb-2">
+      <nav class="flex flex-wrap items-center justify-between align-middle">
         <div class="container mx-auto flex flex-wrap items-center justify-between text-white">
           <div class="w-full relative flex justify-between md:w-auto px-4 md:static md:block md:justify-start">
             <Link class="font-bold flex py-2 whitespace-nowrap items-center">
@@ -28,7 +28,7 @@ export default function Navbar() {
           </div>
           
           <div className={`md:flex md:flex-grow items-center ${showMenu ? 'flex w-full justify-end' : 'hidden'}`}>
-            <ul className="flex flex-col md:flex-row list-none md:ml-auto gap-x-8">
+            <ul className="flex flex-col md:flex-row list-none md:ml-auto gap-x-4 lg:gap-x-8">
               <li>
                 <Link to="/">
                   <div className="px-3 py-2 flex">
