@@ -14,7 +14,7 @@ export default function Navbar() {
   };
 
   const handleScroll = () => {
-    if (window.scrollY > window.innerHeight) {
+    if (window.scrollY >= window.innerHeight) {
       setScrolling(true);
     } else {
       setScrolling(false);

@@ -4,9 +4,9 @@ import * as styles from '../../styles/hero.module.css'
 export default function HeroSection() {
   return (
     <section className={styles.header} >
-      <div class="w-full xl:w-2/3 text-center md:text-left">
+      <div class="xl:container mx-auto w-full md:w-2/3 text-center md:text-left">
         <div class="leading-relaxed mb-5">
-          <h1 class="py-5 text-3xl text-white md:text-6xl">Inventories simplified, success amplified</h1>
+          <h1 class="py-5 text-3xl text-white md:text-7xl font-semibold">Inventories simplified,<br/> success amplified</h1>
           <p class="py-5 md:text-2xl font-light text-white ">Seamlessly manage your business inventory with a single application.</p>
         </div>
         <div class="py-5">
