@@ -7,7 +7,7 @@
   SmartStock landing page
 </h1>
 
-This is a simple landing page made for a fictional software for inventory management called "SmartStock". I made this to showcase my Tailwind, CSS, HTML5 and JavaScript skills, and to learn more about Gatsby, a React-based open source framework. Feel free to open a pull request in case you have any suggestions to enhance this project.
+This is a simple landing page made for a fictional inventory management software called "SmartStock". I made this to showcase my Tailwind, CSS, HTML5 and JavaScript skills, and to learn more about Gatsby, a React-based open source framework. Feel free to open a pull request in case you have any suggestions to enhance this project.
 
 ## Technologies used
 
