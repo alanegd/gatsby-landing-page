@@ -1,49 +1,58 @@
 <p align="center">
   <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <img alt="SmartStock" src="src/images/logo.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
-  Gatsby Minimal Starter
+  SmartStock landing page
 </h1>
 
-## 🚀 Quick start
+This is a simple landing page made for a fictional inventory management software called "SmartStock". I made this to showcase my Tailwind, CSS, HTML5 and JavaScript skills, and to learn more about Gatsby, a React-based open source framework. Feel free to open a pull request in case you have any suggestions to enhance this project.
 
-1.  **Create a Gatsby site.**
+## Technologies used
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+- [Gatsby](https://www.gatsbyjs.com/): React-based open source framework.
+- [Tailwind CSS](https://tailwindcss.com/): CSS framework.
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+## Getting started
 
-2.  **Start developing.**
+1. Open the command prompt and clone the repository:
+```
+git clone https://github.com/alanegd/gatsby-landing-page
+```
 
-    Navigate into your new site’s directory and start it up.
+2. Navigate to the project directory.
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+3. Run the following command to install the necessary dependencies listed in the package.json file:
+  ``` 
+  npm install 
+  ```
 
-3.  **Open the code and start customizing!**
+4. Run the Gatsby Development Server with:
+```
+gatsby develop
+```
 
-    Your site is now running at http://localhost:8000!
+5. Open your web browser and go to `http://localhost:8000/ ` to view the Gatsby site.
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+## Project structure
 
-4.  **Learn more**
+```
+.
+└── src
+    ├── components
+    |   ├── layout
+    |   |   # Components that define the overall structure of the user interface
+    |   └── sections
+    |       # Components that represent distinct sections of content on a page
+    ├── images
+    |   # Contains the images used in different parts of the application
+    ├── pages
+    |   # Contains the React components that correspond to different pages
+    └── styles
+        # Contains the stylesheets of the application
+```
 
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Tutorials](https://www.gatsbyjs.com/docs/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Guides](https://www.gatsbyjs.com/docs/how-to/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Netlify)
-
-Deploy this starter with one click on [Netlify](https://app.netlify.com/signup):
-
-[<img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-minimal)
+## Contact
+* GitHub: [https://github.com/alanegd](https://github.com/alanegd)
+* LinkedIn: [https://www.linkedin.com/in/alan-galavis/](https://www.linkedin.com/in/alan-galavis/)
