@@ -5,7 +5,7 @@ import { faCheck } from '@fortawesome/free-solid-svg-icons'
 export default function PricingSection() {
   return (
     <section>
-        <div class="py-8 px-4 mx-auto max-w-screen-xl">
+        <div class="py-24 px-4 mx-auto max-w-screen-xl">
             <div class="mx-auto max-w-screen-md text-center mb-10">
                 <h2 class="mb-4 text-3xl font-semibold text-gray-900">Flexible plans</h2>
                 <p class="mb-5 md:text-xl font-light">Choose the plan that best accommodates to your business needs.</p>

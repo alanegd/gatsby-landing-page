@@ -4,8 +4,11 @@
 module.exports = {
   siteMetadata: {
     title: `SmartStock`,
+    siteTitle: `SmartStock`,
     description: `landing page made to learn gatsby`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://smartstockapp.netlify.app/`,
+    siteImage: `src/images/logo.svg`,
+    siteLanguage: `en`
   },
   plugins: [
     {

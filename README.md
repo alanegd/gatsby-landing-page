@@ -1,11 +1,12 @@
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
+  <a href="https://smartstockapp.netlify.app/">
     <img alt="SmartStock" src="src/images/logo.svg" width="60" />
   </a>
 </p>
 <h1 align="center">
   SmartStock landing page
 </h1>
+
 
 This is a simple landing page made for a fictional inventory management software called "SmartStock". I made this to showcase my Tailwind, CSS, HTML5 and JavaScript skills, and to learn more about Gatsby, a React-based open source framework. Feel free to open a pull request in case you have any suggestions to enhance this project.
 
@@ -52,6 +53,12 @@ gatsby develop
     └── styles
         # Contains the stylesheets of the application
 ```
+
+## Deployment status
+
+  <a href="https://smartstockapp.netlify.app/">
+    <img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/679e3c8b-8303-47fb-b7e6-73d945aa1409/deploy-status">
+  </a>
 
 ## Contact
 * GitHub: [https://github.com/alanegd](https://github.com/alanegd)
